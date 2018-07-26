@@ -2,19 +2,22 @@
 ## Service Node Install
 ### 1. Get a VPS server from a provider like DigitalOcean, Vultr, Amazon AWS, Linode, etc…
 
+### 2. Enable the communication ports for Liberty
+
 ```
 ufw allow 41412/tcp
 ufw status
 ```
 
-### Install the Liberty CLI wallet. Always download the latest release available
+### 3. Install the Liberty CLI wallet. Always download the latest release available
 Download and install the Liberty Coin wallet files using the following command:
 
 ```
 curl https://s3.amazonaws.com/liberty-builds/4.0.4.1/v4.0.4.1-linux-x64.tar.gz | tar xvz
 ```
 
-Next we're going to remove the qt-wallet, which we don't need to run a servicenode.
+### 4. Cleanup the install, removing the QT Wallet
+Next we're going to remove the qt-wallet, which we don't need it in order to run a servicenode.
 
 `rm liberty-qt`
 
