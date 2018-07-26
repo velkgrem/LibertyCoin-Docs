@@ -21,6 +21,8 @@ Next we're going to remove the qt-wallet, which we don't need it in order to run
 
 `rm liberty-qt`
 
+### 5. Configure the Masternode
+
 `mkdir -p ~/.libertycore`
 
 `cd ~/.libertycore`
@@ -36,6 +38,8 @@ servicenodeaddr=YOUR_PUBLIC_IP:41412
 servicenodeprivkey=YOUR_SERVICENODE_PRIVATE_KEY
 ```
 when done press `ctrl+o` then enter to confirm that the file name is **liberty.conf** then `ctrl+x` to exit that mode.
+
+### 6. Startting the Masternode
 
 `cd`
 
